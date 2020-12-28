@@ -1,0 +1,156 @@
+﻿@import '../../../mixin';
+
+.moviediscover {
+    padding-bottom:20px;
+}
+
+.moviediscover.mobile  {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.moviediscover.tablet-desktop {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.moviediscover > .litem  {
+    margin-bottom: 10px;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.moviediscover.mobile > .litem {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.moviediscover.tablet-desktop > .litem {
+    @include flexbox();
+    @include justify-content(flex-start);
+    @include flex-wrap(nowrap);
+}
+
+.moviediscover > .litem > .title {
+    margin: 0 0 5px 0;
+    padding: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.moviediscover.mobile > .simplesortby > .dropdown {
+    width: 100%;
+}
+
+.moviediscover > .simplesortby > .dropdownAndDirection {
+    @include flexbox();
+    @include justify-content(flex-start);
+    @include flex-wrap(nowrap);
+}
+
+.moviediscover.mobile > .simplesortby > .dropdownAndDirection > .dropdown {
+    width: 100%;
+}
+
+.moviediscover.tablet-desktop > .simplesortby > .dropdownAndDirection > .dropdown {
+    width: 200px;
+}
+
+.moviediscover > .simplesortby > .dropdownAndDirection > .orderbydirection {
+    padding: 10px;
+    border: 1px solid #d8d8d8;
+    background: #fff;
+    height: 42px;
+    width: 42px;
+    padding-top:15px;
+    margin-left:10px;
+    cursor: pointer;
+}
+
+.moviediscover > .litem > .selectedFilterValues {
+    width:100%;
+}
+
+.moviediscover > .litem > .selectedFilterValues > div {
+    margin-bottom: 10px;
+}
+
+.moviediscover > .litem > .selectedFilterValues > .filteroptions {
+    @include flexbox();
+    @include justify-content(flex-start);
+    @include flex-wrap(nowrap);
+    width:100%;
+}
+
+.moviediscover > .litem > .selectedFilterValues .filterItems {
+    @include flexbox();
+    @include justify-content(flex-start);
+    @include flex-wrap(wrap);
+    width: 100%;
+}
+
+.moviediscover > .litem > .selectedFilterValues .filteroptions-mobile {
+    margin-bottom: 5px;
+}
+
+.moviediscover > .litem > .selectedFilterValues .filteroptions-tablet {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.moviediscover > .litem > .selectedFilterValues .filteroptions-desktop {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.moviediscover .info {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.moviediscover .moremovies {
+    width: 100%;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color:silver;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.moviediscover .moremovies.hide {
+    display: none;
+}
+
+.moviediscover .loadingmovies {
+    height: 35px;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+    display:none;
+}
+
+.moviediscover .loadingmovies.show {
+    display:block;
+}
+
+.moviediscover .loadingmovies  .loadingicon {
+    background: url('../../loading.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+}
+
+.moviediscover .loadingmovies .loadingtext {
+    position: relative;
+    top:-10px;
+    margin-left:10px;
+}

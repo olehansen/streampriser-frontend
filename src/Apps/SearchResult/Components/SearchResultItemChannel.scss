@@ -1,0 +1,13 @@
+.streamhubjs-searchresultitemchannel {
+    color:black;
+    padding-left: 10px;
+}
+
+.streamhubjs-searchresultitemchannel > .title {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.streamhubjs-searchresultitemchannel > .description > pre {
+    font-family: 'Open-Sans', sans-serif;
+}

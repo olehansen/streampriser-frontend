@@ -1,0 +1,49 @@
+@import '../../../mixin';
+
+.streamhubjs-searchresultitemperson {
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(flex-start);
+    color:black;
+}
+
+.streamhubjs-searchresultitemperson .hide {
+    display: none;
+}
+
+.streamhubjs-searchresultitemperson > .right {
+    padding-left: 10px;
+    // margin-left: 10px;
+    // width: 100%;
+}
+
+.streamhubjs-searchresultitemperson .moviestitles {
+    // width: 100%;
+}
+
+.streamhubjs-searchresultitemperson .personimg {
+    width:120px;
+    height: 160px;
+    // overflow: hidden;
+    // border: 1px solid red;
+    // flex-basis: 120px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+// .streamhubjs-searchresultitemperson  .personimg img {
+//     height: 160px;
+// }
+
+// .streamhubjs-searchresultitemperson > .right > .name {
+//     font-size:24px;
+// }
+
+// .streamhubjs-searchresultitemperson > .right > .name > a {
+//     font-size:24px;
+//     color:black;
+// }
+
+// .streamhubjs-searchresultitemperson > .right > .name > a:hover {
+//     text-decoration: underline;
+// }

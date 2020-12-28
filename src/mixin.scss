@@ -1,0 +1,99 @@
+// -webkit-font-smoothing: antialiased;
+// -moz-osx-font-smoothing: grayscale;
+
+@mixin box-sizing($value) {
+    -webkit-box-sizing: $value;
+       -moz-box-sizing: $value;
+            box-sizing: $value;
+}
+
+@mixin box-shadow2($value){
+    -webkit-box-shadow: $value;
+       -moz-box-shadow: $value;
+            box-shadow: $value;
+}
+     
+@mixin box-shadow($value,$value2) {
+    -webkit-box-shadow: $value, $value2;
+    -moz-box-shadow: $value, $value2;
+    box-shadow: $value, $value2;
+}
+
+@mixin flex-wrap($value)
+{
+    -webkit-flex-wrap:$value;
+    -moz-flex-wrap:$value;
+    flex-wrap:$value;
+}
+
+@mixin flex-direction($value) {
+    -webkit-flex-direction: $value; /* Safari 6.1+ */
+    flex-direction: $value; 
+}
+
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex($value) {
+    -webkit-box-flex: $value;
+    -moz-box-flex:  $value;
+    -webkit-flex:  $value;
+    -ms-flex:  $value;
+    flex:  $value;
+}
+
+@mixin justify-content($value) {
+    -webkit-justify-content: $value; 
+    -moz-justify-content: $value; 
+    justify-content: $value;
+}
+
+@mixin flex-direction($value) {
+    -webkit-flex-direction: $value;
+    flex-direction: $value; 
+}
+
+@mixin align-items($value) {
+    -webkit-align-items: $value;
+    align-items: $value;
+}
+
+@mixin order($val) {
+    -webkit-box-ordinal-group: $val;  
+    -moz-box-ordinal-group: $val;     
+    -ms-flex-order: $val;     
+    -webkit-order: $val;  
+    order: $val;
+}
+
+@mixin transition-duration($val) {
+    -webkit-transition-duration: $val; /* Safari */
+    transition-duration: $val;
+}
+
+@mixin transition($value) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    transition: $value;
+}
+
+@mixin flex-grow($value) {
+    -webkit-flex-grow: $value;
+    flex-grow: $value;
+}
+
+@mixin flex-basis($value) {
+    -webkit-flex-basis: $value; /* Safari 6.1+ */
+    flex-basis: $value;
+}
+
+@mixin  flex-shrink($value) {
+    flex-shrink: 1 0 auto;
+    // flex-shrink: $value;
+    -webkit-flex-shrink: $value;
+}

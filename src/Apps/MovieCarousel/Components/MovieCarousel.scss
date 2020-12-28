@@ -1,0 +1,90 @@
+@import '../../../mixin';
+
+.moviecarousel {
+    overflow:hidden;
+}
+
+.moviecarousel.tablet-desktop  {
+    width: 100%;
+}
+
+.moviecarousel .hide{
+    display: none;
+}
+
+.moviecarousel  > .top {
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(space-between);
+    @include align-items(center);
+}
+
+.moviecarousel > .top > .title {
+    font-size: 1.7em;
+    padding-left:10px;
+}
+
+.moviecarousel > .top a {
+    color:black;
+}
+
+.moviecarousel > .top .morelink {
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(flex-start);
+    padding-right: 10px;
+}
+
+.moviecarousel > .top .morelink > .morelinkname {
+    line-height: 19px;
+    padding-right: 10px;
+}
+
+.moviecarousel .moviecarousel-outer {
+    height: 370px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.moviecarousel .moviecarousel-outer .overlayleft {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.moviecarousel .moviecarousel-outer .overlayrigth {
+    position: absolute;
+    top:0px;
+    right:10px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.moviecarousel .moviecarousel-outer .moviecarousel-inner {
+    width: 100%;
+    height: 390px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    // padding-right: 20px; /* Increase/decrease this value for cross-browser compatibility */
+    // padding-bottom: 20px; /* Increase/decrease this value for cross-browser compatibility */
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(flex-start);
+    // margin-right: 10px;
+}
+
+.moviecarousel .moviecarousel-outer .moviecarousel-inner > .theend {
+    width: 35px;
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+}
+
+.moviecarousel .positionbar {
+    height: 5px;
+    background-color: gray;
+    position: relative;
+    transition: transform 0s;
+}

@@ -1,0 +1,38 @@
+@import '../../mixin';
+
+.movieslider {
+    width: 100%;
+}
+
+.movieslider  > .top {
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(space-between);
+    @include align-items(center);
+}
+
+.movieslider > .top > .title {
+    font-size: 1.7em;
+    padding-left:10px;
+}
+
+.movieslider > .top a {
+    color:black;
+}
+
+.movieslider > .top .morelink {
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(flex-start);
+    padding-right: 10px;
+}
+
+.movieslider > .top .morelink > .morelinkname {
+    line-height: 19px;
+    padding-right: 10px;
+}
+
+.movieslider .item {
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+}

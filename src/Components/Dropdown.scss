@@ -1,0 +1,59 @@
+@import '../mixin';
+
+.streamhubjs-dropdown {
+    cursor: pointer;
+    width:100%;
+    height: 42px;
+    position: relative;
+}
+
+.streamhubjs-dropdown > .hide {
+    display: none;
+}
+
+.streamhubjs-dropdown > .title {
+    @include flexbox();
+    @include justify-content(space-between);
+    padding:10px;
+    border: 1px solid #d8d8d8;
+    background: #fff;
+    @include box-sizing(border-box);
+    height: 42px;
+}
+
+.streamhubjs-dropdown > .title :hover  {
+    @include box-shadow2(0 0 2px rgba(0, 0, 0, 0.2));
+}
+
+.streamhubjs-dropdown > .title > .name {
+    font-weight: bold;
+    @include box-shadow2(none);
+}
+
+.streamhubjs-dropdown > .title > .icon {
+    margin-left: 10px;
+    @include box-shadow2(none);
+    padding-top:10px;
+}
+
+.streamhubjs-dropdown > .options {
+    position: absolute;
+    top:41px;
+    background-color:white;
+    z-index:300;
+    border: 1px solid #d8d8d8;
+    @include box-sizing(border-box);
+    width: 100%;
+}
+
+.streamhubjs-dropdown > .options :hover {
+    @include box-sizing(border-box);
+}
+
+.streamhubjs-dropdown > .options .item {
+    padding:10px;
+}
+
+.streamhubjs-dropdown > .selected {
+    font-weight: bold;
+}

@@ -1,0 +1,69 @@
+@import '../../../mixin';
+
+.moviediscoverfilterselected.tablet-desktop {
+    @include flexbox();
+    @include justify-content(flex-start);
+    @include flex-wrap(nowrap);
+}
+
+.moviediscoverfilterselected > .title {
+    margin: 0 0 5px 0;
+    padding: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.moviediscoverfilterselected > .items.mobile {
+    width: 100%;
+    overflow: hidden;
+}
+
+.moviediscoverfilterselected > .items.tablet-desktop {
+    @include flexbox();
+    @include justify-content(flex-start);
+    @include flex-wrap(wrap);
+    width:100%;
+}
+
+.moviediscoverfilterselected > .items > .value {
+    @include transition(border-color .2s ease-in-out);
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    height: 40px;
+    @include box-sizing(border-box);
+    @include flexbox();
+    @include justify-content(space-between);
+    @include flex-wrap(nowrap);
+    background-color: white;
+}
+
+.moviediscoverfilterselected > .items > .value.mobile {
+    margin: 0 0 5px 0;
+}
+
+.moviediscoverfilterselected > .items > .value.tablet-desktop {
+    margin: 0 5px 5px 0;
+}
+
+.moviediscoverfilterselected > .items > .value > .title {
+    padding-right: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 10px;
+}
+
+.moviediscoverfilterselected > .items > .value >  .titleImg {
+    padding-right: 5px;
+    padding: 6px;
+    overflow: hidden;
+}
+
+
+.moviediscoverfilterselected > .items >.value > .icon {
+    padding: 10px;
+    line-height: 1;
+    border-left: 1px solid #ccc;
+}

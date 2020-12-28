@@ -1,0 +1,80 @@
+@import '../../mixin';
+
+.SliderlItem {
+    width: 180px;
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    @include box-shadow2(1px 1px 8px #E2E2E2);
+    margin-top:5px;
+    margin-left:5px;
+    margin-right:5px;
+    margin-bottom:10px;
+    background-color:white;
+}
+
+.SliderlItem a, a:focus, a:hover {
+    color:black;
+    text-decoration: none;
+}
+
+.SliderlItem > a > .inner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.SliderlItem > a > .inner > .top {
+    height: 45px;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    // @include flex-wrap(wrap);
+    overflow: hidden;
+}
+
+.SliderlItem > a > .inner > .top > .title {
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+.SliderlItem > a > .inner > .top > .title > .titleinner {
+    margin-right: 3px;
+}
+
+
+// .MovieCarouselItem > a > .inner > .top > .year {
+//     font-weight: normal;
+//     // height: 15px;
+//     // font-size: 0.7rem;
+//     // width: 180px;
+//     // text-align: center;
+//     // overflow: hidden;
+// }
+
+.SliderlItem > a > .inner > .genres {
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    @include flex-wrap(wrap);
+    font-size: 18px;
+    color:#fff200;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    line-height: normal;
+    height: 40px;
+    padding:3px;
+    overflow: hidden;
+}
+
+// .MovieCarouselItem > a > .inner > .arrow {
+//     position: absolute;
+//     right: 0;
+//     left: 0;
+//     bottom: 0px;
+//     height: 16px;
+//     width: 30px;
+//     overflow: auto;
+//     margin: auto;
+//     z-index:2;
+// }

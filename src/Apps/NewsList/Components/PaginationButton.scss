@@ -1,0 +1,119 @@
+@import '../../../mixin';
+
+.pagination-button {
+    background-color: #ffffff;
+    color: #16191e;
+    // background-color: #d62c42;
+    // color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 100%;
+    border-radius: 3px;
+    @include box-shadow2(0 3px 10px 0 rgba(0,0,0,.07));
+    height: 40px;
+}
+
+// .paging-button:hover {
+//     background-color: #16191e;
+//     color: #ffffff;
+// }
+
+.pagination-button .pagination-button-inner {
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(space-between);
+    // padding-left: 20%;
+    // padding-right: 20%;
+}
+
+.pagination-button .pagination-button-inner > div {
+    width:100%;
+}
+
+.pagination-button .pagination-button-inner .leftleft {
+    width:100%;
+    // padding-left: 40px;
+    // padding-right: 40px;
+    position: relative;
+    padding: 10px;
+    height: 40px;
+    border-right: 1px solid #373a3c;
+}
+
+.pagination-button .pagination-button-inner .left {
+    width:100%;
+    // padding-left: 40px;
+    // padding-right: 40px;
+    position: relative;
+    padding: 10px;
+    height: 40px;
+    border-right: 1px solid #373a3c;
+}
+
+.pagination-button .pagination-button-inner .right {
+    width:100%;
+    // padding-left: 40px;
+    // padding-right: 40px;
+    position: relative;
+    padding: 10px;
+    height: 40px;
+
+}
+
+.pagination-button .pagination-button-inner .right .more {
+    color: #373a3c;
+    position: relative;
+    top: -3px;
+    padding-right: 5px;
+}
+
+.pagination-button .center {
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(center);
+}
+
+.pagination-button .icon-left-arrow {
+    width: 20px;
+    height: 20px;
+    background: url('./images/002-back-1.png');
+    background-size: 20px 20px;
+}
+
+.pagination-button .icon-right-arrow {
+    width: 20px;
+    height: 20px;
+    background: url('./images/002-next-1.png');
+    background-size: 20px 20px;
+}
+
+.pagination-button .icon-alltheway-left-arrow {
+    width: 20px;
+    height: 20px;
+    background: url('./images/006-back.png');
+    background-size: 20px 20px;
+}
+
+.hideleftleft .leftleft-outer {
+    display: none;
+}
+
+.hideleft .left-outer {
+    display: none;
+}
+
+.hideright .right-outer {
+    display: none;
+}
+
+.hideright .left {
+    border-right: 0px !important;
+}
+
+.hidemore .more {
+    display: none;
+}

@@ -1,0 +1,18 @@
+.movieCarouselpager{
+    height: 100px;
+    width: 60px;
+    // background: rgba(100, 100, 100, 0.9);
+    background: rgba(2, 157, 203, 1);
+    position: relative;
+    top:133px;
+    left:5px;
+    border-radius: 5px;
+}
+
+.movieCarouselpager .centerme {
+    position:relative;
+    top: 40px;
+    left: 25px;
+    width: 10px;
+    height: 20px;
+}

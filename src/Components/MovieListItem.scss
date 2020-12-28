@@ -1,0 +1,205 @@
+@import '../mixin';
+
+.MovieListItemMobile2 {
+    // @include flex-grow(1);
+    // @include flex-basis(0);
+    // flex: 1 1 0;
+    // @include flex(1 1 auto);
+    @include flex(1 0 290px);
+    // @include flex(1 0 auto);
+}
+
+.MovieListItemMobile2.mobile {
+    margin-bottom: 5px;
+    @include box-shadow2(1px 1px 8px #E2E2E2);
+}
+// E2E2E2
+.MovieListItemMobile2.tablet-desktop {
+    @include box-shadow2(1px 1px 8px #E2E2E2);
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-left:5px;
+    margin-right:5px;
+    margin-bottom:10px;
+}
+
+.MovieListItemMobile2 .ico_calendar {
+    background: url(ico_calendar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 17px;
+}
+
+.MovieListItemMobile2 .ico_clock {
+    background: url(ico_clock.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+}
+
+.MovieListItemMobile2 .ico_infinity {
+    background: url(ico_infinity.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+}
+
+
+.MovieListItemMobile2.row-even {
+    background-color:white;
+}
+
+.MovieListItemMobile2.row-odd {
+    background-color: silver;
+}
+
+.MovieListItemMobile2 a, a:focus, a:hover {
+    color:black;
+    text-decoration: none;
+}
+
+.MovieListItemMobile2 .top {
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+// .MovieListItemMobile2 .top .img {
+//     width:40%;
+//     height: 100%;
+// }
+
+.MovieListItemMobile2 .top .content {
+    padding-left:3px;
+    padding-right:3px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include flex-direction(column);
+    @include justify-content(space-between);
+}
+
+.MovieListItemMobile2 .top .content > div {
+    padding-top:3px;
+    padding-bottom:3px;
+}
+
+.MovieListItemMobile2 .top .content > .title {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.MovieListItemMobile2 .top .content > .year {
+    font-size: 16px;
+    text-align: center;
+    color:gray;
+}
+
+.MovieListItemMobile2 .top .content > .genres {
+    // @include flexbox();
+    // @include justify-content(center);
+    // @include flex-wrap(wrap);
+    font-size: 18px;
+    color:#fff200;
+    text-decoration: none;
+    // font-style: italic;
+    text-transform: capitalize;
+    line-height: normal;
+    text-shadow: 1px 1px 0px rgb(173, 163, 24);
+}
+
+.MovieListItemMobile2 .top .content > .rating {
+    color:black;
+    text-decoration: none;
+}
+
+.MovieListItemMobile2 .top .content > .rating > .ratingbig {
+    font-size: 22px;
+}
+
+.MovieListItemMobile2 .top .content > .rating > .ratingsmall {
+    font-size: 10px;
+    color:gray;
+    text-decoration: none;
+}
+
+// .MovieListItemMobile2 .top > .content > .imdb {
+//     color:black;
+//     font-weight: bold;
+//     font-size: 1.2em;
+//     height: 27px;
+//     padding:0px;
+//     line-height: 0px;
+// }
+
+// .MovieListItemMobile2 .top .content > .imdb > .logo {
+//     background:url('imdblogo.png');
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     height: 27px;
+//     width: 55px;
+//     display:inline-block;
+//     vertical-align:middle ;
+// }
+
+// .MovieListItemMobile2 .top .content > .imdb > .maxrating {
+//     color: #8e8e8e;
+// }
+
+.MovieListItemMobile2 .bottom {
+    // position: absolute;
+    // bottom: 0px;
+    // left:0px;
+}
+
+.MovieListItemMobile2 .bottom > .price {
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(space-between);
+    font-size:14px;
+    width: 100%;
+    padding: 0px 5px 0px 5px; 
+    // border-bottom: 1px dotted gray;
+}
+.MovieListItemMobile2 .bottom > .price.na {
+    opacity: 0.3;
+    // text-decoration: line-through;
+}
+
+.MovieListItemMobile2 .bottom > .price > .priceleft {
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(flex-start);
+}
+
+.MovieListItemMobile2 .bottom > .price > .priceleft > .pricetext {
+    padding-left: 10px;
+}
+
+.MovieListItemMobile2.tablet-desktop .top .content > .arrow {
+    display: none;
+}
+
+.MovieListItemMobile2 .top .content > .arrow {
+    position: absolute;
+    right: 5px;
+    left: auto;
+    top: 0;
+    bottom: 0;
+    height: 16px;
+    width: 9px;
+    background:url('../arrow_right.png');
+    overflow: auto;
+    margin: auto;
+}

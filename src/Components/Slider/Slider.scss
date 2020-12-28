@@ -1,0 +1,63 @@
+@import '../../mixin';
+
+.slider {
+    width: 100%;
+    overflow:hidden;
+}
+
+// .slider.tablet-desktop  {
+//     width: 100%;
+// }
+
+.slider .hide{
+    display: none;
+}
+
+.slider .slider-outer {
+    height: 370px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider .slider-outer .overlayleft {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.slider .slider-outer .overlayrigth {
+    position: absolute;
+    top:0px;
+    right:10px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.slider .slider-outer .slider-inner {
+    width: 100%;
+    height: 390px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    // padding-right: 20px; /* Increase/decrease this value for cross-browser compatibility */
+    // padding-bottom: 20px; /* Increase/decrease this value for cross-browser compatibility */
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(flex-start);
+    @include flex-shrink(0);
+    // margin-right: 10px;
+}
+
+.slider .slider-outer .slider-inner .slider-inner-item {
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+}
+
+// .slider .positionbar {
+//     height: 5px;
+//     background-color: gray;
+//     position: relative;
+//     transition: transform 0s;
+// }

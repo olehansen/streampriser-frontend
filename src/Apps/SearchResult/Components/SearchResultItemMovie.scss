@@ -1,0 +1,50 @@
+@import '../../../mixin';
+
+.streamhubjs-SearchResultItemMovie {
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(flex-start);
+    color:black;
+}
+
+.streamhubjs-SearchResultItemMovie .hide {
+    display: none;
+}
+
+.streamhubjs-SearchResultItemMovie > .right {
+    padding-left: 10px;
+}
+
+.streamhubjs-SearchResultItemMovie > .right > .title {
+    font-size:24px;
+}
+
+.streamhubjs-SearchResultItemMovie > .right > .title > b {
+    text-transform: capitalize;
+}
+
+.streamhubjs-SearchResultItemMovie > .right > .title  > .alt {
+    font-size:14px;
+}
+
+.streamhubjs-SearchResultItemMovie .movieimg {
+    width:120px;
+    height: 160px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+// .streamhubjs-SearchResultItemMovie .movieimg img {
+//     height: 160px;
+// }
+
+// .streamhubjs-SearchResultItemMovie > .right > .title > a {
+//     font-size:24px;
+//     color:black;
+// }
+
+// .streamhubjs-SearchResultItemMovie > .right > .title > a:hover {
+//     text-decoration: underline;
+// }
+
+

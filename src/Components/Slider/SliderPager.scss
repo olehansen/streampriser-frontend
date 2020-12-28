@@ -1,0 +1,19 @@
+.sliderPager{
+    height: 60px;
+    width: 40px;
+    // background: rgba(100, 100, 100, 0.9);
+    // background: rgba(2, 157, 203, 1);
+    background:#fff200;
+    position: relative;
+    top:133px;
+    left:5px;
+    border-radius: 5px;
+}
+
+.sliderPager .centerme {
+    position:relative;
+    top: 20px;
+    left: 15px;
+    width: 10px;
+    height: 20px;
+}

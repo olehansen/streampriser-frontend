@@ -1,0 +1,19 @@
+@import '../mixin';
+
+.MovieList  {
+    width: 100%;
+    overflow:auto;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include justify-content(flex-start);
+}
+
+// .MovieList.tablet-desktop {
+//     width: 100%;
+//     @include flexbox();
+//     @include flex-wrap(wrap);
+// }
+
+.MovieList.center {
+    // @include justify-content(center);
+}

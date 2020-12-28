@@ -1,0 +1,41 @@
+@import '../../../mixin';
+
+.newslist-list {
+    width: 100%;
+}
+
+.newslist-list > div {
+    width: 100%;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+}
+
+.newslist-list > div > .i {
+    margin-left:0px;
+    margin-top:0px;
+    margin-right:0px;
+    margin-bottom:20px;
+    width: 100%;
+}
+
+.paging-outer {
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.newslist-list .noresult {
+    background-color: #fff;
+    font-size: 15px;
+    padding:20px;
+}
+
+.newslist-list.mobile .noresult {
+    margin-bottom: 5px;
+}
+
+.newslist-list.tablet-desktop .noresult {
+    border-radius: 3px;
+    @include box-shadow2(0 3px 10px 0 rgba(0,0,0,.07));
+}
+

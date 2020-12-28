@@ -1,0 +1,90 @@
+
+@import '../../mixin';
+
+.streamhubjs-topmenusearch {
+    width: 100%;
+    // @include box-shadow(0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12));
+}
+
+.streamhubjs-topmenusearch > .bar {
+    height: 60px;
+    width: 100%;
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(space-between);
+    @include box-sizing(border-box);
+}
+
+.streamhubjs-topmenusearch > .bar > .icon {
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.streamhubjs-topmenusearch > .bar > .icon > img {
+    height: 20px;
+}
+
+.streamhubjs-topmenusearch > .bar > .input {
+    padding: 10px 0px;
+    width: 100%;
+    height: 40px;
+    margin-top:2px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.streamhubjs-topmenusearch > .bar > .input input {
+    width: 100%;
+    padding: 0px 20px;
+    border-width: 0;
+    outline: none;
+    font-size:22px;
+    color:white;
+    background: #181f24;
+}
+
+.streamhubjs-topmenusearch > .result {
+    border-bottom:1px solid white;
+    width: 100%;
+}
+
+.streamhubjs-topmenusearch > .result > div > .links {
+    border-top:1px solid white;
+    overflow-y:auto;
+}
+
+.streamhubjs-topmenusearch > .result > div > .links > a {
+    color:white;
+    text-decoration: none;
+}
+
+.streamhubjs-topmenusearch > .result > div > .links > a > .searchlink {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom:10px;
+    // border-bottom:1px solid white;
+    font-size:15px;
+    text-transform: capitalize;
+}
+
+.streamhubjs-topmenusearch > .result > div > .more {
+    // border-top:1px solid gray;
+    text-align: center;
+    padding-top:15px;
+    padding-bottom:15px;
+    height: 70px;
+}
+
+.streamhubjs-topmenusearch > .result > div > .more > a {
+    color:white;
+    text-decoration: none;
+    font-size:25px;
+}
+
+.streamhubjs-topmenusearch > .result > .searching {
+    text-align: center;
+}

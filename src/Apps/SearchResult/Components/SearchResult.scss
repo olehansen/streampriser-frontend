@@ -1,0 +1,76 @@
+
+.streamhubjs-searchresult .hide {
+        display: none;
+}
+
+.streamhubjs-searchresult > .loading > .loadingicon {
+        background: url('../../loading.gif');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 32px;
+        width: 32px;
+        display:inline-block;
+}
+
+.streamhubjs-searchresult > .loading > .loadingtext {
+        position: relative;
+        top:-10px;
+        margin-left:10px;
+}
+
+.streamhubjs-searchresult .paging .current {
+        font-weight: bold;
+}
+
+.streamhubjs-searchresult > .searchInfo {
+        margin-top:26px;
+        margin-bottom:10px;
+}
+
+.streamhubjs-searchresult > div > a > .item {
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+        background-color: #fff;
+        margin-bottom:26px;
+        border-radius: 2px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+}
+
+// .streamhubjs-searchresult > div > a > .item.first {
+//         margin-top:26px;
+// }
+
+.streamhubjs-searchresult > div > a > .item.last {
+        margin-bottom:26px;
+}
+
+.streamhubjs-searchresult > div > a > .item > .inner {
+        padding-right: 30px;
+}
+
+.streamhubjs-searchresult > div > a > .item > .arrow {
+        position: absolute;
+        right: 10px;
+        left: auto;
+        top: 0;
+        bottom: 0;
+        height: 16px;
+        width: 9px;
+        background:url('../../../arrow_right.png');
+        overflow: auto;
+        margin: auto;
+        cursor:pointer;
+}
+
+.streamhubjs-searchresult > div > a > .item .contenttype {
+        border-bottom: 3px solid black;
+}
+
+.streamhubjs-searchresult > div > a > .item .newcontent {
+        padding-bottom: 5px;
+}
+
+.streamhubjs-searchresult > div > a > .item .rightcontent {
+        padding-bottom: 5px;
+}

@@ -1,0 +1,76 @@
+@import '../../../mixin';
+@import "../../../opensans.css";
+// @import "../../../fonts.css";
+
+.streamhubjs-searcher-searchboxv2 {
+    position: relative;
+    font-family: BebasNeueBook sans-serif;
+}
+
+.streamhubjs-searcher-searchboxv2 .hide {
+    visibility: hidden;
+}
+
+.streamhubjs-searcher-searchboxv2 .crossicon {
+    background: url(cross.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+}
+
+.streamhubjs-searcher-searchboxv2 .searchicon {
+    background: url(search.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+}
+
+.streamhubjs-searcher-searchboxv2 .bar {
+    // border: 1px solid grey;
+    @include box-shadow(0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08));
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(space-between);
+    border-radius: 2px;
+    background-color:white;
+}
+
+.streamhubjs-searcher-searchboxv2 .bar .searchinput {
+    width: 100%;
+    padding:5px;
+}
+
+.streamhubjs-searcher-searchboxv2 .bar .searchinput input {
+    width: 100%;
+    padding-left:10px;
+    border:0px;
+    outline: none;
+}
+
+// .streamhubjs-searcher-searchbox .bar .crossiconconcontainer {
+//     padding:10px;
+//     @include flexbox();
+//     @include align-items(center);
+//     @include justify-content(center);
+//     margin-bottom: 0px;
+//     cursor: pointer;
+// }
+
+.streamhubjs-searcher-searchboxv2 .bar .searchiconcontainer {
+    background-color:black;//#C7C7C7;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    cursor: pointer;
+    margin:4px;
+    border-radius: 4px;
+}
+
+.streamhubjs-searcher-searchboxv2.tablet-desktop .bar .searchiconcontainer {
+    padding: 10px 30px 10px 30px;
+}
+.streamhubjs-searcher-searchboxv2.mobile .bar .searchiconcontainer {
+    padding:10px;
+}
