@@ -76,7 +76,7 @@ export class MovieSlider extends BaseAppIndex {
                 <div className="text-center" style={{ height: "60px", paddingTop: "5px" }} >
                     <div style={{ color: "white", lineHeight: "100%" }}>{item.title}</div>
                     <div style={{ color: "gray", fontSize: "80%" }}>{item.year}</div>
-                    {item.bestprice_rental != -1 ? <div style={{ color: "#d62c42" }}>{item.bestprice_rental}</div> : <div></div>}
+                    {item.bestprice_rental != -1 ? <div style={{ color: "#d62c42" }}>{item.bestprice_rental} kr</div> : <div></div>}
                 </div>
             </a>
         </div>;

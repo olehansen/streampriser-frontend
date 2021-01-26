@@ -13,7 +13,7 @@ module.exports = {
     mode: "development",
 
     output: {
-        filename: "./dist/streampriser.js",
+        filename: "streampriser.js",
         library: "streampriser"
     },
 

@@ -35,15 +35,15 @@ export class MovieDiscoverDataFactory {
 
     createProvidersFilter(): MultiSelectableListFilter {
         const providers: SelectableWithImgUrl[] = [
-            new SelectableWithImgUrl("82FB0846-87C7-4DBD-8552-7E4F9E325768", "Netflix", "/content/images/providers/netflix.png"),
-            new SelectableWithImgUrl("650741FE-0548-416F-9EEC-C7FFA7096D39", "C More Play", "/content/images/providers/cmore.png"),
+            // new SelectableWithImgUrl("82FB0846-87C7-4DBD-8552-7E4F9E325768", "Netflix", "/content/images/providers/netflix.png"),
+            // new SelectableWithImgUrl("650741FE-0548-416F-9EEC-C7FFA7096D39", "C More Play", "/content/images/providers/cmore.png"),
             new SelectableWithImgUrl("0D9CC042-3C9B-4C89-8106-2F755F8B8726", "Viaplay", "/content/images/providers/viaplay.png"),
-            new SelectableWithImgUrl("ABAAD0BC-A5A7-45D9-9EA9-871679033EAF", "HBO Nordic", "/content/images/providers/hbo.png"),
-            new SelectableWithImgUrl("532E8F84-A84B-42A9-81AD-148A9F2BD81A", "Plejmo", "/content/images/providers/plejmo.png"),
-            new SelectableWithImgUrl("B42C959C-5129-47D9-AF4A-B74658B24A32", "Blockbuster", "/content/images/providers/blockbuster.png"),
+            // new SelectableWithImgUrl("ABAAD0BC-A5A7-45D9-9EA9-871679033EAF", "HBO Nordic", "/content/images/providers/hbo.png"),
+            // new SelectableWithImgUrl("532E8F84-A84B-42A9-81AD-148A9F2BD81A", "Plejmo", "/content/images/providers/plejmo.png"),
+            // new SelectableWithImgUrl("B42C959C-5129-47D9-AF4A-B74658B24A32", "Blockbuster", "/content/images/providers/blockbuster.png"),
             new SelectableWithImgUrl("059fda3a-5884-4a88-ba13-b1b4054b5308", "Itunes", "/content/images/providers/itunes.png"),
-            new SelectableWithImgUrl("0B88E153-DC53-4631-A263-80EC4F4BF19A", "danskfilmskat", "/content/images/providers/danskfilmskat.png"),
-            new SelectableWithImgUrl("dad18723-f387-4968-91c4-1b40eb29980c", "minbio", "/content/images/providers/min-bio-g.png")
+            // new SelectableWithImgUrl("0B88E153-DC53-4631-A263-80EC4F4BF19A", "danskfilmskat", "/content/images/providers/danskfilmskat.png"),
+            // new SelectableWithImgUrl("dad18723-f387-4968-91c4-1b40eb29980c", "minbio", "/content/images/providers/min-bio-g.png")
         ];
         return new MultiSelectableListFilter("providers", "Streamingtjenester", providers);
     }
